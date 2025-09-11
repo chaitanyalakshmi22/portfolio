@@ -1,153 +1,151 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PORTFOLIO</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poli Chaitanya Lakshmi's Portfolio</title>
   <style>
     :root {
-  --bg: url("https://i.postimg.cc/d3Y1cS5x/78149d84ecad4f643d93d19528177067.jpg");
-  --accent: #00bcd4;
-  --text: #f4f4f4;
-  --text-secondary: #bbb;
-  --border: #333;
-  --text-overflow: hsla(9, 100%, 64%, 0.6);
-}
+      --bg: #222;
+      --accent: #00bcd4;
+      --text: #f4f4f4;
+      --text-secondary: #bbb;
+      --border: #333;
+    }
 
-body { 
-  font-family: Arial;
-  background: var(--bg);
-  color: var(--text-secondary);
-  margin: 50;
-  padding: 70;
-  font-size: 2.0rem;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-secondary);
+      margin: 0;
+      padding: 0;
+      font-size: 1.25rem;
+    }
 
-header {
-  background: var(--bg);
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
+    header {
+      background: var(--bg);
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
 
-header h1 {
-  font-size: 3.5rem;
-  letter-spacing: 1px;
-  margin: 0;
-  color: var(--accent);
-}
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin: 0;
+      color: var(--accent);
+    }
 
-header p {
-  font-size: 2.5rem;
-  color: var(--text-overflow);
-  margin: 0.5rem 0 1rem 0;
-}
+    header p {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin: 0.5rem 0 1rem 0;
+    }
 
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  margin: 0 0.7em;
-  font-weight: 500;
-  font-size: 2rem;
-  transition: color 0.1s;
-}
-nav a:hover {
-  color: #fff;
-}
+    nav {
+      margin-top: 1rem;
+    }
 
-section {
-  max-width: 1500px;
-  margin: 3.5rem auto;
-  background: var(--bg);
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-  padding: 1rem;
-  border: 1px solid var(--bg);
-}
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.7em;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.1s;
+    }
 
-h2 {
-  color: var(--accent);
-  font-size: 2.5rem;
-  margin-top: 0;
-}
+    nav a:hover {
+      color: #fff;
+    }
 
-ul {
-  padding-left: 1.2rem;
-}
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      margin-bottom: 1rem;
+    }
 
-li {
-  margin-bottom: 0.5em;
-  color: var(--text-secondary);
-}
+    section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      background: var(--bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      padding: 2rem;
+      border: 1px solid var(--border);
+    }
 
-.project, .certifications, .education {
-            border-left: 5px solid var(--accent);
-            padding: 1rem 1.5rem; /* Adjusted padding */
-            margin-bottom: 2rem;
-            background: rgba(38, 38, 38, 0.7); /* Slightly darker background for project/cert cards */
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        }
+    h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
 
-        .project h3, .certifications h3, .education h3 {
-            color: var(--text-overflow); 
-            margin: 0 0 0.5rem 0;
-            font-size: 2.5rem;
-        }
+    h3 {
+      color: var(--text);
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
 
-         .education h4, .education h5 {
-            color: var(--text-overflow); 
-            margin: 0 0 0rem 0;
-            font-size: 2.5rem;
-        }
+    h4 {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin: 0.25rem 0;
+    }
 
-        .project p, .certifications p, .education p {
-            color: var(--text-secondary);
-            margin: 0.2rem 0 0.8rem 0;
-        }
+    .education p {
+      margin: 0.5rem 0;
+    }
 
-        .project a, .certifications a, section a, .education a {
-            color: var(--accent);
-            text-decoration: underline;
-        }
+    ul {
+      padding-left: 1.2rem;
+    }
 
-        .project a:hover, .certifications a:hover, section a:hover, .education a:hover {
-            color: #fff;
-            text-decoration: none;
-        }
+    li {
+      margin-bottom: 0.5em;
+      color: var(--text-secondary);
+    }
 
-footer {
-  background: var(--bg);
-  color: var(--text-secondary);
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 0rem;
-  border-top: 1px solid var(--border);
-  font-size: 1.0rem;
-}
+    .project, .certifications, .education {
+      border-left: 5px solid var(--accent);
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      background: rgba(38, 38, 38, 0.7);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
 
-@media (max-width: 800px) {
-  section {
-    padding: 1rem;
-    max-width: 95vw;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-}
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--bg);
+      color: var(--text-secondary);
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
   <header>
-        <img
-  src="https://i.postimg.cc/d0kWDrTZ/pic-6.jpg"
-  alt="Poli Chaitanya Lakshmi Profile" usemap="#pic6"
-  <map name="pic6"
-  <area shape="circle" coords="325,270,350" alt="Photo" href="photo.htm" </map
-  className="w-48 h-48 circular-full object-cover shadow-lg border-4 border-transparent bg-gradient-to-tr from-teal-400 to-blue-500 p-1"
-  style="float: center; margin-left: 20px; margin-bottom: 10px"
-  /> 
-    <h1> <strong>POLI CHAITANYA LAKSHMI</strong></h1>
+    <img src="https://i.postimg.cc/d0kWDrTZ/pic-6.jpg" alt="Poli Chaitanya Lakshmi Profile" class="profile-photo" />
+    <h1><strong>POLI CHAITANYA LAKSHMI</strong></h1>
     <p>Fresher Software Developer | Passionate about coding & technology</p>
     <nav>
       <a href="#about">About</a> |
@@ -158,68 +156,73 @@ footer {
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  
+
   <section id="about">
-    <h2><i>About Me</i></h2>
-    <p>
-      I am a recent graduate with a degree in Electronics and Communication. I love building applications and learning new technologies. Looking for an opportunity to start my career in software development.
+    <h2>About Me</h2>
+    <p> 
+      I am a recent graduate with a degree in Electronics and Communication. I love building applications and learning new technologies. I'm looking for an opportunity to start my career in software development.
     </p>
   </section>
 
   <section id="education">
-    <h2><i>Education</i></h2>
+    <h2>Education</h2>
     <div class="education">
-    <h3>Bachelor Of Technology</h3> <i>Electronics and Communication Engineering</i> <i>(Sree Rama Engineering College-80%)</i>
-    <h4>Intermediate</h4> <i>MPC(Narayana Junior College-96%)</i>  
-    <h5>SSC</h5> <i>A.P.Model School-98%</i>
-
-  </div>
-  </section>
-  
-  <section id="skills">
-    <h2><i>Skills</i></h2>
-    <ul>
-      <li><b>Languages: </b> Java, Html</li>
-      <li><b>Tools: </b> GitHub, VS Code, Eclipse</li>
-      <li><b>Database: </b> MySQL</li>
-    </ul>
-  </section>
-  
-  <section id="projects">
-    <h2><i>Projects</i></h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal website to showcase my skills and projects. <a href=url("https://github.com/chaitanyalakshmi22/portfolio")>GitHub Repo</a></p>
-      <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+      <h3>Bachelor of Technology</h3>
+      <p>Electronics and Communication Engineering (Sree Rama Engineering College - 80%)</p>
+      <h3>Intermediate</h3>
+      <p>MPC (Narayana Junior College - 96%)</p>
+      <h3>SSC</h3>
+      <p>A P Model School - 98%</p>
     </div>
   </section>
-  
-  <section id="certifications">
-        <h2><i>Certifications</i></h2>
-        <div class="certifications">
-            <h3>Programming With Java</h3>
-            <p>Certified in Core Java and strong understanding of Object-Oriented Programming's concepts.</p>
-            <p><a href="https://i.postimg.cc/8k4fMMtg/Java-chaitu.png" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
-            <p><strong>Tech Used:</strong> Core Java</p>
-        </div>
-    </section>
 
-    <section id="languages known">
-      <h2><i>Languages Known</i></h2>
-     <b><li>English</li>
-      <li>Telugu</li></b>
-    </section>
-  
-  <section id="contact">
-    <h2><i>Contact</i></h2>
-    <p><b>Contact: </b> +91 9390847004</p>
-    <p><b>Email: </b> chaitanyapoli123@gmail.com</p>
-    <p><b>LinkedIn: </b> <a href="https://www.linkedin.com/in/poli-chaitanya-lakshmi-950502281/">ChaitanyaReddy</a></p>
-    <p><b>GitHub: </b> <a href="https://github.com/chaitanyalakshmi22">chaitanyalakshmi22</a></p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><b>Languages:</b> Java, HTML, CSS, JavaScript</li>
+      <li><b>Tools:</b> GitHub, VS Code, Eclipse</li>
+      <li><b>Database:</b> MySQL</li>
+    </ul>
   </section>
-  
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal website to showcase my skills and projects.</p>
+      <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+      <p><a href="https://github.com/chaitanyalakshmi22/portfolio" target="_blank" rel="noopener noreferrer">GitHub Repo</a></p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <h3>Programming with Java</h3>
+      <p>Certified in Core Java with a strong understanding of Object-Oriented Programming concepts.</p>
+      <p><strong>Tech Used:</strong> Core Java</p>
+      <p><a href="https://i.postimg.cc/8k4fMMtg/Java-chaitu.png" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
+    </div>
+  </section>
+
+  <section id="languages">
+    <h2>Languages Known</h2>
+    <ul>
+      <li><b>English</b></li>
+      <li><b>Telugu</b></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><b>Contact:</b> +91 9390847004</p>
+    <p><b>Email:</b> <a href="mailto:chaitanyapoli123@gmail.com">chaitanyapoli123@gmail.com</a></p>
+    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/poli-chaitanya-lakshmi-950502281/" target="_blank" rel="noopener noreferrer">Chaitanya Lakshmi</a></p>
+    <p><b>GitHub:</b> <a href="https://github.com/chaitanyalakshmi22" target="_blank" rel="noopener noreferrer">chaitanyalakshmi22</a></p>
+  </section>
+
   <footer>
-    <p>&copy; 2025 PoliChaitanyaLakshmi</p>
+    <p>&copy; 2025 Poli Chaitanya Lakshmi</p>
   </footer>
 </body>
 </html>
